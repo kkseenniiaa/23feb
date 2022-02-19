@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.wrapper{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(img/camouflage-pattern-background-vector-classic-2043023.jpg);
+    background-size: cover;
+}
+.wrapper__picture{
+    
+}
+.wrapper__img{
+    
+}
+.wrapper__title{
+    font-size: 60px;
+    color: rgb(20, 11, 11);
+    animation-;
+}
