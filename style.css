@@ -3,24 +3,90 @@
 }
 html,
 body{
-    width: 100%;
-    height: 100%;
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .wrapper{
     height: 100vh;
     overflow: hidden;
-    background-image: url(img/camouflage-pattern-background-vector-classic-2043023.jpg);
+    background-image: url(img/1614628278_6-p-fon-kamuflyazh-dlya-fotoshopa-6.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.wrapper__picture{
-    
-}
-.wrapper__img{
-    
+@keyframes go{
+    0%{
+        color: rgb(123, 255, 0);
+    }
+    50%{
+        color: rgb(16, 99, 16);
+    }
+    100%{
+        color: rgb(12, 41, 9);
+    }
 }
 .wrapper__title{
-    font-size: 60px;
-    color: rgb(20, 11, 11);
-    animation-;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: go;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes do{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform:translateY(150px)
+    }
+}
+.wrapper__img{
+    width: 150px;
+    height: 300px;
+    background-image: url(img/soldiers.png);
+    background-size: cover;
+    animation-name: do;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.94,.84,.05,.7);
+    animation-direction: alternate;
+}
+.poem__list{
+    display: flex;
+    justify-content: center;
+}
+.poem__item{
+    width: 305px;
+    min-height: 450px;
+    background-color: rgb(38, 59, 38, 0.7);
+    font-family: 'Redressed', cursive;
+    border-radius: 10px;
+    margin-right: 40px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in;
+}
+.poem__item:hover{
+    border-color: white;
+    transform: scale(1.10);
+}
+.poem__img-wrap{
+    height: 180px;
+    width: 100%;
+}
+.poem__img{
+    height: 100%;
+}
+.poem__text{
+    font-size: 18px;
 }
